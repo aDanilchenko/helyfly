@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #37373F;
+}
+
+/* Element Style
+**************************/
+
+a {
+    color: #5286EC;
+    text-decoration: none;
+}
+
+h3 { font-size: 20px; font-weight: 500; color: #37373F; } 
+
+ul li {
+    list-style-type: none;
+}
+
+/* Flex Style 
+**************************/
+.flex__align-center {
+    display: flex;
+    align-items: center; 
+}
+
+
+
+/* Colors Shema
+*************************/
+
+.color-gray { color: #c7c7c7; }
+.color-black { color: #37373F; }
+
+/* Header Section
+************************/
+
+.header__inner {
+    padding: 38px 0;
+    display: flex;
+}
+
+.phone {
+    font-size: 14px;
+}
+
+.header__inner div.phone {
+    margin-left: 38px;
+}
+
+
+
+.logo a {
+    font-size: 23px;
+    color: #000;
+}
+
+/* Container  */
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.prompt {
+    padding: 20px;
+    display: inline-block;
+    font-size: 20px;
+    background: #FC9B09;
+    color: #fff;
+}
+
+.prompt__inner {
+    display: flex;
+}
+
+.prompt__price {
+    font-size: 20px;
+} 
+
+/* Header */
+
+
+.intro {
+    background: url("../images/helimain.png") no-repeat;
+    background-size: cover;
+    /* height: 600px */
+    height: 100vh;
+    
+} 
+
+.intro__inner {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.intro__title {
+    max-width: 860px;
+    line-height: 49px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.intro__title span {
+    color: #FC9B09;
+}
+
+/* Content Section 
+**********************/
+
+.content {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.content__inner {
+    padding-top: 70px;
+    display: flex;
+}
+
+.content-text {
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.content-text__title {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2;
+    max-width: 250px;
+    margin-bottom: 18px;
+}
+
+.content-list__item {
+    position: relative;
+    padding-left: 50px;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.content-list__item:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    left: 0; 
+    top: -6px;
+}
+
+.content-list__item.icon-ellips:before { background: url("../images/icon/icon-ellips.svg") no-repeat; }
+.content-list__item.icon-cam:before { background: url("../images/icon/icon-cam.svg") no-repeat; }
+.content-list__item.icon-location:before { background: url("../images/icon/icon-location.svg") no-repeat; }
+.content-list__item.icon-msg:before { background: url("../images/icon/icon-msg.svg") no-repeat; }
+
+
+
+
+/* Gallery */
+
+.gallery-wrap {
+    padding-top: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.gallery__item {
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 270px;
+    max-height: 185px;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery__more-photo {
+    text-align: center;
+    padding: 40px 0 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.gallery__more-photo a {
+    padding: 0 20px;
+    position: relative;
+    transition: text-decoration linear 5s;
+}
+
+.gallery__more-photo a:hover {
+    text-decoration: underline;
+}
+
+.gallery__more-photo a:after {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    background: url(../images/icon/down-arrow.svg) no-repeat;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
+.gallery__more-photo a:before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    background: url(../images/icon/down-arrow.svg) no-repeat;
+    position: absolute;
+    top: 8px;
+    right: 0;    
+}
+
+/* Graph Section
+***********************/
+
+.graph-title {
+    max-width: 300px;
+}
+
+.graph-table {
+    width: 50%;
+    padding: 30px;
+    font-size: 18px;
+    border-collapse: collapse;
+    border: 1px solid #c7c7c7;
+}
+
+.graph-table thead th {
+   font-weight: 500;
+   border-bottom: 1px solid #c7c7c7;
+   vertical-align: middle;
+}
+
+
+
+.graph-table tr td{
+    border-bottom: 1px solid #c7c7c7;
+    padding: 20px 30px;
+    line-height: 35px;
+}
+
+/* About 
+*************************/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 50px;
+}
+
+.about-info {
+    width: 50%;
+}
+
+.about-info h4 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.about-info p {
+    padding: 15px 0;
+}
+.about-master {
+    width: 50%;
+    margin-top: 75px;
+    text-align: center;
+}
+
+.about-master__name {
+    font-size: 18px;
+    margin-bottom: 7px  ;
+}
+
+.about-master__prof {
+    font-size: 14px;
+    margin-bottom: 7px  ;
+}
+
+.about-master__photo {
+    width: 139px;
+    height: 139px;
+    border-radius: 50%;
+    margin: 0 auto 23px;
+    position: relative;    
+}
+
+.about-master__photo div.icon-love {
+    position: absolute;
+    right: -70px; top: -15px;
+}
+
+.about-master__link {
+    font-size: 14px;
+}
+
+/* Map Section
+**************************/
+
+ol {
+    list-style-type: none;
+}
+
+/* Posts Section
+**************************/
+
+.post {
+    max-width: 630px;
+    margin: 0 auto 30px;
+}
+
+.post-author {
+    display: flex;
+}
+
+.post-author__photo {
+    margin-right: 19px;
+    width: 101px;
+    height: 101px;
+}
+/* 
+.post-author__photo img {
+    width: 100%;
+} */
+
+.post-text {
+    margin-left: 120px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.post-info {
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+.post-text div.post-info {
+    padding-top: 15px;
+}
+
+.post-info div.rating {
+    margin-right: 50px;
+}
+
+.post-author__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.post-rating__flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Footer Section 
+****************************/
+
+.footer__nav {
+    padding: 50px 0 27px;
+    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon a {
+    padding: 0 15px;
+
+}
+
+.footer__inner {
+    background: #FAF9F8;    
+}
+
+.footer__inner .container {
+    padding: 10px 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+    color: #B3B3B3;
+
+    background: #FAF9F8;
+}
+
+.footer__phone {
+    margin-bottom: 12px;
+}
+
+.icon-pay__mastercard {
+    margin-right: 20px;
+}
+
+/* Rating 5 stars
+*****************************/
+.rating {
+    display: inline-block;
+}
+
+.icon-calend img {
+    display: inline-block;
+}
+
+
+
+
+
+/* Buttons Style 
+****************************/
+.btn {
+ 
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+.btn-md { font-size: 18px; padding: 24px 37px 23px; font-weight: 900;}
+.btn-sm { font-size: 14px; padding: 16px 32px; }
+
+.btn-white { color: white; }
+.btn-yellow { color: #FC9B09;}
+
+
+.icon-cup {
+    margin-right: 12px;
+}
+
+.rating {
+    margin-left: 12px; 
+}
+
+
+.timetable {
+    border-collapse: collapse;
+    border: 1px solid #c7c7c7; 
+    width: 50%;
+}
+
+.timetable th {
+    /* display: flex;
+    align-items: center; */
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+    padding: 15px 30px;
+}
+
+.timetable th a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.timetable td {
+    padding: 15px 30px;
+    border-top: 1px solid #c7c7c7;
+}
+
+.icon-calend {
+    margin-left: 20px;
+}
+
+/* Modal dialog */
+
+.no-scrool {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(123,55,123,0.9);
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 1200px;
+    background: #255;
+    height: 20px;
+    margin: auto;
+}
