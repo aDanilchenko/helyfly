@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
 <body>
@@ -88,7 +89,12 @@
                    
                     <!-- video -->
                     <div class="content-video">
-                        <video src="https://youtu.be/jvipPYFebWc" controls width="554" height="374" poster="images/photo/video-preview.png"></video>
+                        <div class="video-player">
+                            <img src="images/photo/video-preview.png" alt="video-player">
+                            <!-- <video src="https://youtu.be/jvipPYFebWc" 
+                            controls width="554" height="374" 
+                            poster="images/photo/video-preview.png"></video> -->
+                        </div>
                     </div>
 
                 </div>
@@ -137,7 +143,7 @@
                     </div>
                     <div class="about-master__name">Марина Иванова</div>
                     <div class="about-master__prof">Фотограф</div>
-                    <a class="about-master__link" href="#">Показать больше <br>информации о фотографе</a>s
+                    <a class="about-master__link" href="#">Показать больше <br>информации о фотографе</a>
                 </div>
             </section>
 
@@ -223,138 +229,174 @@
                     <dd class="map-list__item_">2 места</dd>
                 </dl>
 
+                <div class="profile" >
+
+                    
+                </div>
+
             </div>   
         </div> 
     </div>  
 
 <!-- Reviews --> 
     <div class="container">      
-            <section>
-                <h3 class="post-title">Отзывы:</h3>
+            <section class="posts">
+                <h3 class="posts__title">Отзывы:</h3>
 
                 <div class="post">
-                    <div class="post-author">
-                            <div class="post-author__photo"><img src="images/photo/valeria-photo.png" alt="photo"></div>
-                        
-                            <div class="post-author__flex">
-                                <div class="post-author__name">Валерия Антонова</div>
-                                <div class="post-author__prof">Арт-директор</div> 
-                                <div class="post-info">
-                                    <div class="rating">
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                    </div>
-                                    <img src="images/icon/check.svg" alt="">
-                                    Супер! Я бы заказал съемку снова!
-                                </div>
+                    <div class="post-header">
+                        <div class="author">
+                            <div class="author__photo">
+                                <img src="images/photo/kerry.png" alt="photo">
                             </div>
-                    </div>   
+                        
+                            <div class="author__inner">
+                                <div class="author__name">Джон Керри</div>
+                                <div class="author__rating stars">
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>  
+                                </div>                 
+                            </div>
+                        </div> 
 
-                    <div class="post-text">
-                        Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
-                        <div class="post-info"><time>27 Апреля, 2019г.</time></div>
-                    </div>          
+                        <div class="author__check color-gray">
+                            <img src="images/icon/check.svg" alt="check">
+                            Супер! Я бы заказал съемку снова!
+                        </div>
+                    </div>
+ 
+                    <div class="post-content"> 
+                        Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! 
+                        Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. 
+                        Сами много фоткались,поэтому воспоминания обалденные!!!)) 
+                        А еще нам всем напечатали по сертификату воздухоплавателя, 
+                        правда некоторые ленятся за ним съездить))) Но все равно приятно.
+                        Короче, Презентстар – проверено. Оценка: пять!  
+                    </div><div class="clear"></div>
+
+                    <div class="post-footer color-gray"> 
+                        <time>11 Апреля, 2019г.</time>
+                    </div> <div class="clear"></div>
+                </div> 
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="author">
+                            <div class="author__photo">
+                                <img src="images/photo/kerry.png" alt="photo">
+                            </div>
+                        
+                            <div class="author__inner">
+                                <div class="author__name">Джон Керри</div>
+                                <div class="author__rating stars">
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>  
+                                </div>                 
+                            </div>
+                        </div> 
+
+                        <div class="author__check color-gray">
+                            <img src="images/icon/check.svg" alt="check">
+                            Супер! Я бы заказал съемку снова!
+                        </div>
+                    </div>
+ 
+                    <div class="post-content"> 
+                        Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! 
+                        Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. 
+                        Сами много фоткались,поэтому воспоминания обалденные!!!)) 
+                        А еще нам всем напечатали по сертификату воздухоплавателя, 
+                        правда некоторые ленятся за ним съездить))) Но все равно приятно.
+                        Короче, Презентстар – проверено. Оценка: пять!  
+                    </div><div class="clear"></div>
+
+                    <div class="post-footer color-gray"> 
+                        <time>11 Апреля, 2019г.</time>
+                    </div><div class="clear"></div>
                 </div>
 
                 <div class="post">
-                    <div class="post-author">
-                            <div class="post-author__photo"><img src="images/photo/petrow.png" alt="photo"></div>
-                        
-                            <div class="post-author__flex">
-                                <div class="post-author__name">Виталий Петров</div>
-                                <div class="post-author__prof">Фотограф</div> 
-                                <div class="post-info">
-                                    <div class="rating">
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                    </div>
-                                    <img src="images/icon/check.svg" alt="">
-                                    Супер! Я бы заказал съемку снова!
-                                </div>
+                    <div class="post-header">
+                        <div class="author">
+                            <div class="author__photo">
+                                <img src="images/photo/kerry.png" alt="photo">
                             </div>
-                    </div>   
+                        
+                            <div class="author__inner">
+                                <div class="author__name">Джон Керри</div>
+                                <div class="author__rating stars">
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
+                                    <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>  
+                                </div>                 
+                            </div>
+                        </div> 
 
-                    <div class="post-text">
-                        Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо!
-                        <div class="post-info"><time>19 Апреля, 2019г.</time></div>
-                    </div>          
+                        <div class="author__check color-gray">
+                            <img src="images/icon/check.svg" alt="check">
+                            Супер! Я бы заказал съемку снова!
+                        </div>
+                    </div>
+ 
+                    <div class="post-content"> 
+                        Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! 
+                        Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. 
+                        Сами много фоткались,поэтому воспоминания обалденные!!!)) 
+                        А еще нам всем напечатали по сертификату воздухоплавателя, 
+                        правда некоторые ленятся за ним съездить))) Но все равно приятно.
+                        Короче, Презентстар – проверено. Оценка: пять!  
+                    </div><div class="clear"></div>
+
+                    <div class="post-footer color-gray"> 
+                        <time>11 Апреля, 2019г.</time>
+                    </div><div class="clear"></div>
                 </div>
-
-                <div class="post">
-                    <div class="post-author">
-                            <div class="post-author__photo"><img src="images/photo/kerry.png" alt="photo"></div>
-                        
-                            <div class="post-author__flex">
-                                <div class="post-author__name">Джим Керри</div>
-   
-                                <div class="post-info">
-                                    <div class="rating">
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                        <a href="#"><img src="images/icon/vectorstar.svg" alt="star"></a>
-                                    </div>
-                                    <img src="images/icon/check.svg" alt="">
-                                    Супер! Я бы заказал съемку снова!
-                                </div>
-                            </div>
-                    </div>   
-
-                    <div class="post-text">
-                        Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
-                        <div class="post-info"><time>11 Апреля, 2019г.</time></div>
-                    </div>          
-                </div>                              
+                
+                <div class="text-right">
+                    <a href="#" class="more-posts">Показать все (134)</a>
+                </div>
             </section> 
-
-        </div>      <!-- / End Container -->    
+        </div>  <!-- / end container -->    
     </main>
 
-<!-- Footer-->
-    <footer>
+    <footer>    <!-- footer-->
         <div class="container">
-
-            <div class="footer__nav">
+            <div class="footer-logo">
                 <div class="logo">
                     <a href="#">HELYFLY</a>
                 </div>
 
-                <div class="social-icon">
-                    <a href="#" class="social-icon__vk"><img src="images/icon/vk.svg" alt="vk"></a>
-                    <a href="#" class="social-icon__fb"><img src="images/icon/fb.svg" alt="vk"></a>
-                    <a href="#" class="social-icon__in"><img src="images/icon/in.svg" alt="in"></a>
-                    <a href="#" class="lang">RU<img src="images/icon/down-arrow.svg"></a>
+                <div class="soc-icons">
+                    <a href="#" class="soc-icons__vk"><img src="images/icon/vk.svg" alt="vk"></a>
+                    <a href="#" class="soc-icons__fb"><img src="images/icon/fb.svg" alt="vk"></a>
+                    <a href="#" class="soc-icons__in"><img src="images/icon/in.svg" alt="in"></a>
                 </div>
-            </div>
-            
+            </div>         
         </div>
 
-            <div class="footer__inner">
-                <div class="container">
-
-                    <div class="icon-pay">
-                        <a href="#" class="icon-pay__mastercard"><img src="images/icon/mastercard.svg"></a>
-                        <a href="#" class="icon-pay__visa"><img src="images/icon/visa.svg"></a>
-                    </div>
-
-                    <div>
-                        <div class="footer__phone">Тех. поддержка: 8(800)700-00-00</div>
-                        <div class="footer__copy">&copy; 2018 HELYFLY. All Rights Reserved.</div>
-                    </div>
-
-                    <div></div>
-
+        <div class="footer-copy">
+            <div class="container">
+                <div class="icon-pay">
+                    <a href="#" class="icon-pay__mastercard"><img src="images/icon/mastercard.svg"></a>
+                    <a href="#" class="icon-pay__visa"><img src="images/icon/visa.svg"></a>
                 </div>
-            </div>  
 
-        
+                <div>
+                    <div class="footer__phone">Тех. поддержка: 8(800)700-00-00</div>
+                    <div class="footer__copy">&copy; 2018 HELYFLY. All Rights Reserved.</div>
+                </div>
+
+                <div></div>
+            </div>
+        </div>       
     </footer>
 
 </body>
